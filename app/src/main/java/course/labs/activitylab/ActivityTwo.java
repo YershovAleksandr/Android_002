@@ -53,15 +53,17 @@ public class ActivityTwo extends Activity {
 		// Hint: Access the TextView by calling Activity's findViewById()
 		// textView1 = (TextView) findViewById(R.id.textView1);
 
+		mCreate = 0;
+		mRestart = 0;
+		mStart = 0;
+		mResume = 0;
+
 		mTvCreate = (TextView)findViewById(R.id.create);
 		mTvRestart = (TextView)findViewById(R.id.restart);
 		mTvStart = (TextView)findViewById(R.id.start);
 		mTvResume = (TextView)findViewById(R.id.resume);
-		
-		
-		
-		
-		Button closeButton = (Button) findViewById(R.id.bClose); 
+
+		Button closeButton = (Button) findViewById(R.id.bClose);
 		closeButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -80,15 +82,15 @@ public class ActivityTwo extends Activity {
 		// Has previous state been saved?
 		if (savedInstanceState != null) {
 
-			// TODO:
+			// ODO:
 			// Restore value of counters from saved state
 			// Only need 4 lines of code, one for every count variable
 
+			mCreate = savedInstanceState.getInt(CREATE_KEY);
+			mRestart = savedInstanceState.getInt(RESTART_KEY);
+			mStart = savedInstanceState.getInt(START_KEY);
+			mResume = savedInstanceState.getInt(RESUME_KEY);
 
-			
-			
-			
-			
 		}
 
 		// Emit LogCat message
@@ -184,12 +186,13 @@ public class ActivityTwo extends Activity {
 		// Save counter state information with a collection of key-value pairs
 		// 4 lines of code, one for every count variable
 
-
-
+		savedInstanceState.putInt(CREATE_KEY, mCreate);
+		savedInstanceState.putInt(START_KEY, mStart);
+		savedInstanceState.putInt(RESUME_KEY, mResume);
+		savedInstanceState.putInt(RESTART_KEY, mRestart);
 		
 		
-		
-		
+		super.onSaveInstanceState(savedInstanceState);
 	}
 
 	// Updates the displayed counters

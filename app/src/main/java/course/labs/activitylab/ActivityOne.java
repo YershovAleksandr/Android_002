@@ -22,7 +22,7 @@ public class ActivityOne extends Activity {
 
 	// Lifecycle counters
 
-	// TODO:
+	// ODO:
 	// Create variables named
 	// mCreate, mRestart, mStart and mResume
 	// to count calls to onCreate(), onRestart(), onStart() and
@@ -31,18 +31,34 @@ public class ActivityOne extends Activity {
 	// You will need to increment these variables' values when their
 	// corresponding lifecycle methods get called.
 
-	// TODO: Create variables for each of the TextViews
+	private int mCreate;
+	private int mRestart;
+	private int mStart;
+	private int mResume;
+
+	// ODO: Create variables for each of the TextViews
 	// named mTvCreate, mTvRestart, mTvStart, mTvResume.
 	// for displaying the current count of each counter variable
+
+	private TextView mTvCreate;
+	private TextView mTvRestart;
+	private TextView mTvStart;
+	private TextView mTvResume;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_one);
 
-		// TODO: Assign the appropriate TextViews to the TextView variables
+		// ODO: Assign the appropriate TextViews to the TextView variables
 		// Hint: Access the TextView by calling Activity's findViewById()
 		// textView1 = (TextView) findViewById(R.id.textView1);
+
+		mTvCreate = (TextView)findViewById(R.id.create);
+		mTvRestart = (TextView)findViewById(R.id.restart);
+		mTvStart = (TextView)findViewById(R.id.start);
+		mTvResume = (TextView)findViewById(R.id.resume);
 
 		Intent intent = new Intent(this, ActivityTwo.class);
 
@@ -51,21 +67,18 @@ public class ActivityOne extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO:
+				// ODO:
 				// Launch Activity Two
 				// Hint: use Context's startActivity() method
 
 				// Create an intent stating which Activity you would like to
 				// start
-				//Intent intent = null;
-
-				//Intent intent = new Intent();
-
-				//startActivity(new Intent(ActivityTwo.class));
+				Intent intent = null;
 
 				// Launch the Activity using the intent
 
-				Intent intent = new Intent(getBaseContext(), ActivityTwo.class);
+				//Intent intent = new Intent(getBaseContext(), ActivityTwo.class);
+				intent = new Intent(getBaseContext(), ActivityTwo.class);
 				startActivity(intent);
 
 
@@ -84,9 +97,11 @@ public class ActivityOne extends Activity {
 		// Emit LogCat message
 		Log.i(TAG, "Entered the onCreate() method");
 
-		// TODO:
+		// ODO:
 		// Update the appropriate count variable
 		// Update the user interface via the displayCounts() method
+		mCreate++;
+		displayCounts();
 
 	}
 
@@ -99,9 +114,12 @@ public class ActivityOne extends Activity {
 		// Emit LogCat message
 		Log.i(TAG, "Entered the onStart() method");
 
-		// TODO:
+		// ODO:
 		// Update the appropriate count variable
 		// Update the user interface
+		mStart++;
+		displayCounts();
+
 
 	}
 
@@ -112,9 +130,12 @@ public class ActivityOne extends Activity {
 		// Emit LogCat message
 		Log.i(TAG, "Entered the onResume() method");
 
-		// TODO:
+		// ODO:
 		// Update the appropriate count variable
 		// Update the user interface
+		mResume++;
+		displayCounts();
+
 
 	}
 
@@ -141,9 +162,11 @@ public class ActivityOne extends Activity {
 		// Emit LogCat message
 		Log.i(TAG, "Entered the onRestart() method");
 
-		// TODO:
+		// ODO:
 		// Update the appropriate count variable
 		// Update the user interface
+		mRestart++;
+		displayCounts();
 
 	}
 
@@ -157,7 +180,7 @@ public class ActivityOne extends Activity {
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
-		// TODO:
+		// ODO:
 		// Save state information with a collection of key-value pairs
 		// 4 lines of code, one for every count variable
 
@@ -169,12 +192,12 @@ public class ActivityOne extends Activity {
 	// specified above
 	public void displayCounts() {
 
-		// TODO - uncomment these lines
-	/*
+		// ODO - uncomment these lines
+
 		mTvCreate.setText("onCreate() calls: " + mCreate);
 		mTvStart.setText("onStart() calls: " + mStart);
 		mTvResume.setText("onResume() calls: " + mResume);
 		mTvRestart.setText("onRestart() calls: " + mRestart);
-	*/
+
 	}
 }

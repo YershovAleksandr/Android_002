@@ -1,0 +1,16 @@
+b)
+	ActivityOne:	OneCreate, OnStart, OnResume, OnPause, OnStop.
+	ActivityTwo:	OnCreate, OnStart, OnResume.
+
+c)
+	ActivityOne:	OnRestart, OnStart, OnResume.
+	ActivityTwo:	OnPause, OnStop, OnDestroy.
+
+d)
+	ActivityOne:	OnPause, OnStop.
+	ActivityTwo:	OnCreate, OnStart, OnResume, OnPause, OnStop.
+
+e)
+	ActivityOne:	
+	ActivityTwo:	OnRestart, OnStart, OnResume.
+

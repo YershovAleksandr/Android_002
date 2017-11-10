@@ -6,31 +6,28 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1510150503645"
+    timestamp="1510316716754"
     token="2303618734770113547"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="515" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="73" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
     <artifact
         location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
         location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -39,13 +36,16 @@
         location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
         location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
         location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -59,16 +59,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1510150503645"
+        timestamp="1510316716754"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -77,13 +74,16 @@
             location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/home/hp/AndroidStudioProjects/Coursera/Android_002/Lab2_ActivityLab2/app/build/intermediates/split-apk/debug/slices/slice_9.apk"

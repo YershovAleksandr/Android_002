@@ -44,6 +44,8 @@ public class ActivityOne extends Activity {
 		// Hint: Access the TextView by calling Activity's findViewById()
 		// textView1 = (TextView) findViewById(R.id.textView1);
 
+		Intent intent = new Intent(this, ActivityTwo.class);
+
 		Button launchActivityTwoButton = (Button) findViewById(R.id.bLaunchActivityTwo);
 		launchActivityTwoButton.setOnClickListener(new OnClickListener() {
 
@@ -55,9 +57,17 @@ public class ActivityOne extends Activity {
 
 				// Create an intent stating which Activity you would like to
 				// start
-				Intent intent = null;
+				//Intent intent = null;
+
+				//Intent intent = new Intent();
+
+				//startActivity(new Intent(ActivityTwo.class));
 
 				// Launch the Activity using the intent
+
+				Intent intent = new Intent(getBaseContext(), ActivityTwo.class);
+				startActivity(intent);
+
 
 			}
 		});
